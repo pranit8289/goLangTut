@@ -9,9 +9,13 @@ func main() {
 	// card := "Ace of Spade" // third method to declare variable
 	// use this at very first initialization of variable
 	// var card float = 10.0
-	card := newCard()
+	// card := newCard()
+	cards := []string{"Ace of spade", newCard()} // declaration of slice one method
+	// slice is array but with growing size
+	cards = append(cards, "seven of heart") //appending the cars slice
+	// append will return new slice, so assigning to cards
 
-	fmt.Println("card :", card)
+	fmt.Println("cards :", cards)
 }
 
 func newCard() string {
