@@ -15,7 +15,10 @@ func main() {
 	cards = append(cards, "seven of heart") //appending the cars slice
 	// append will return new slice, so assigning to cards
 
-	fmt.Println("cards :", cards)
+	// fmt.Println("cards :", cards)
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
 }
 
 func newCard() string {
